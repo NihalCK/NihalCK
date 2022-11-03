@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const HeroImg = () => {
   return (
-    <div className="hero">
+    <div className="hero container">
       <div className="mask">
         <img className="intro-img" src={Intro} alt="introimage" />
       </div>

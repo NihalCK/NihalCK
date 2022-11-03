@@ -3,6 +3,7 @@ import "../components/Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Container } from "react-bootstrap";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -19,6 +20,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor);
 
   return (
+    <Container>
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
         <h1>Nihal.ck</h1>
@@ -45,6 +47,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
+    </Container>
   );
 };
 
